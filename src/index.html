@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Chinese New Year</title>
+    <!-- Style CSS link -->
+    <link rel="stylesheet" href="../src/style.css" />
+    <!-- tailwind linik -->
+    <link
+      rel="shortcut icon"
+      href="../src/image/Logo/torii-gate.png"
+      type="image/x-icon"
+    />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animation link -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <!-- CDN Script -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-gold: #f3c623;
+        --color-red: #800000;
+      }
+      .font-koulen {
+        font-family: "Koulen", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-red-700 m-0 p-0">
+    <header class="flex justify-between items-center sticky top-0 lg:px-8 px-4">
+      <div class="flex items-center">
+        <img
+          src="../src/image/pngegg (5).png"
+          alt=""
+          class="lg:w-[200px] w-[100px]"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          src="../src/image/pngegg (5).png"
+          alt=""
+          class="lg:w-[200px] w-[100px]"
+        />
+      </div>
+    </header>
+    <main
+      class="flex flex-col justify-center items-center lg:mx-20 mx-4 relative"
+    >
+      <div class="qrCode z-10 absolute top-0 lg:mt-10 mt-8 opacity-95">
+        <img
+          src="../src/image/aba_mobile_1737979013449.png"
+          alt="qrCode"
+          class="lg:w-[400px] w-[200px] rounded-xl hidden"
+          id="qrCode"
+        />
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="lg:w-[300px] lg:h-[300px] w-[200px] h-[200px]">
+          <dotlottie-player
+            src="https://lottie.host/b605661e-48d0-4644-8588-5be33f1f8e83/dtAYQNsiCg.lottie"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+      </div>
+      <div class="paragrah">
+        <h1
+          class="text-center text-gold lg:text-4xl text-[16px] font-koulen lg:pb-2 pb-1"
+        >
+          រីករាយពិធីបុណ្យចូលឆ្នាំចិន
+        </h1>
+        <p class="text-center text-gold lg:text-lg text-[14px] font-koulen">
+          សូមជូនពរឆ្នាំថ្មី សុខភាពល្អ រកសុីមានបានគ្រប់ក្រុមគ្រួសារ
+        </p>
+      </div>
+      <div class="donate flex flex-col justify-center items-center">
+        <div class="lg:w-[300px] lg:h-[300px] w-[200px] h-[200px]">
+          <dotlottie-player
+            src="https://lottie.host/9e9bf550-cff8-41e8-b717-bf6e5363edc1/WJMxVuvEUq.lottie"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <button
+          type="button"
+          class="bg-red bg-cover bg-center text-gold lg:text-lg text-[14px] font-koulen lg:px-4 py-4 px-2 rounded-lg"
+          id="btn-donate"
+        >
+          សូមនៅចុចទីនេះ
+        </button>
+      </div>
+      <div class="endsection flex">
+        <div class="flex flex-row items-between lg:gap-[500px] gap-[50px]">
+          <div class="lg:w-[300px] lg:h-[300px] w-[200px] h-[200px]">
+            <dotlottie-player
+              src="https://lottie.host/58af439a-c075-48c1-aee9-904c558ec874/Axz7uwt0Rb.lottie"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+          <div class="lg:w-[300px] lg:h-[300px] w-[200px] h-[200px]">
+            <dotlottie-player
+              src="https://lottie.host/58af439a-c075-48c1-aee9-904c558ec874/Axz7uwt0Rb.lottie"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
